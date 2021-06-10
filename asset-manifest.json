@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-burger/static/css/main.418ca8b9.chunk.css",
+    "main.js": "/react-burger/static/js/main.db7cccf9.chunk.js",
+    "main.js.map": "/react-burger/static/js/main.db7cccf9.chunk.js.map",
+    "runtime-main.js": "/react-burger/static/js/runtime-main.fca7d8a3.js",
+    "runtime-main.js.map": "/react-burger/static/js/runtime-main.fca7d8a3.js.map",
+    "static/js/2.1fe8408e.chunk.js": "/react-burger/static/js/2.1fe8408e.chunk.js",
+    "static/js/2.1fe8408e.chunk.js.map": "/react-burger/static/js/2.1fe8408e.chunk.js.map",
+    "static/js/3.37029870.chunk.js": "/react-burger/static/js/3.37029870.chunk.js",
+    "static/js/3.37029870.chunk.js.map": "/react-burger/static/js/3.37029870.chunk.js.map",
+    "index.html": "/react-burger/index.html",
+    "static/css/main.418ca8b9.chunk.css.map": "/react-burger/static/css/main.418ca8b9.chunk.css.map",
+    "static/js/2.1fe8408e.chunk.js.LICENSE.txt": "/react-burger/static/js/2.1fe8408e.chunk.js.LICENSE.txt",
+    "static/media/Main.css": "/react-burger/static/media/chicken.b5c62113.png",
+    "static/media/lowBun.d534b51d.png": "/react-burger/static/media/lowBun.d534b51d.png",
+    "static/media/topBun.218f2ce9.png": "/react-burger/static/media/topBun.218f2ce9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fca7d8a3.js",
+    "static/js/2.1fe8408e.chunk.js",
+    "static/css/main.418ca8b9.chunk.css",
+    "static/js/main.db7cccf9.chunk.js"
+  ]
+}
