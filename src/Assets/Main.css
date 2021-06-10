@@ -1,0 +1,173 @@
+.Title {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, #141414 -62%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16vw;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+}
+.Burger {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.BurgerCustomize {
+    position: absolute;
+    width: 4%;
+    height: 65%;
+    top: 18%;
+    right: 0;
+    background: #141414;
+    color: #fff;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    /* padding-right: 5px; */
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.widthBurgerCustomize {
+    width: 10%;
+    position: absolute;
+    height: 75%;
+    top: 12%;
+    right: 0;
+    background: #141414;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.D-div {
+    writing-mode: vertical-rl;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    font-size: 0.8rem;
+}
+.BurgerCZ {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.BurgerCZ > button {
+    position: absolute;
+    top: 0;
+    left: -18px;
+    background: black;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+}
+.BurgerCZ ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.BurgerCZ ul li {
+    width: 80%;
+    height: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    border-bottom: 1px solid black;
+}
+.BurgerCZ ul li img {
+    width: 100%;
+}
+.btn {
+    border-radius: 5px;
+    border: none;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding: 0.5vw 1vw;
+    margin-top: 1.5vh;
+}
+.ml-2 {
+    margin-left: 5px;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chicken {
+    background-image: url('../Assets/Images/chicken.png');
+}
+.tomato {
+    background-image: url('../Assets/Images/Tomato.png');
+}
+.cheese {
+    background-image: url('../Assets/Images/Cheese.png');
+}
+.butter {
+    background-image: url('../Assets/Images/Butter.png');
+}
+.lettuce {
+    background-image: url('../Assets/Images/Lettuce.png');
+}
+
+
+/* Header */
+.Header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header > img {
+    height: 100%;
+    margin-left: 10px;
+    transform: rotate(-5deg);
+    margin-top: 10px;
+}
+.Header > button {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 20px;
+    padding: 5px 15px;
+    background: white;
+    border: none;
+    border-radius: 25px;
+    /* font-size: 1.3vw; */
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 425px) {
+    .widthBurgerCustomize {
+        width: 15%;
+        height: 50%;
+        top: 25%;
+    }
+    .BurgerCustomize{
+        height: 50%;
+        top: 25%;
+        padding: 0px 8px;
+    }
+}
