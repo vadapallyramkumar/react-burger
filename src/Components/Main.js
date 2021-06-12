@@ -4,6 +4,7 @@ import TopBun from '../Assets/Images/topBun.png'
 import LowBun from '../Assets/Images/lowBun.png'
 import BurgerCustomize from './BurgerCustomize'
 import Header from './Header'
+import Checkout from './Checkout'
 
 function Main() {
     const [burgeritems, setburgeritems] = useState([]);
@@ -13,6 +14,7 @@ function Main() {
     const [butterCount, setbutterCount] = useState(0)
     const [lettuceCount, setlettuceCount] = useState(0)
     const [price, setprice] = useState(0)
+    const [checkoutshow, setcheckoutshow] = useState(false)
 
     const createBurger = (path, type) => {
         console.log('fn: createBurger');
@@ -84,9 +86,32 @@ function Main() {
         }
     }
 
+    const CheckoutEvent = () => {
+        setcheckoutshow(true);
+    }
+    const closeChekout = () => {
+        setcheckoutshow(false);
+    }
+    const submitCheckout = (id) => {
+        let ele = document.getElementById(id);
+        if(ele.value.length > 0) {
+            closeChekout();
+            setburgeritems([]);
+            setprice(0);
+            setchickenCount(0);
+            settomatoCount(0);
+            setcheeseCount(0);
+            setbutterCount(0);
+            setlettuceCount(0);
+            alert('Order Success !!!')
+        } else {
+            alert('Please enter address')
+        }
+    }
+
     return (
         <div>
-            <Header price={price}/>
+            <Header price={price} Checkout={CheckoutEvent}/>
             <div className='Title'>
                 Burger
             </div>
@@ -99,7 +124,7 @@ function Main() {
                     {
                         burgeritems.length > 0 && <>{
                             burgeritems.map((item) => {
-                                console.log(item)
+                                // console.log(item)
                                 return(
                                     <img src={item.path[item.type]} alt={item.type} />
                                 )
@@ -110,6 +135,9 @@ function Main() {
                 </>
             </div>
             <BurgerCustomize Customize={createBurger} remove={removeBurgerItem} LCount={lettuceCount} BCount={butterCount} CHCount={cheeseCount} TCount={tomatoCount} CCount={chickenCount}/>
+            {
+                checkoutshow === true && <Checkout closeChekout={closeChekout} items={burgeritems} submit={submitCheckout}  />
+            }
         </div>
     )
 }
